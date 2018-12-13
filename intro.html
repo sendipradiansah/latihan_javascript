@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		function ubahBg(){
+			document.bgColor = "yellow";
+		}
+
+		function tampilPesan($isipesan){
+			alert($isipesan);
+		}
+	</script>
+	
+	<p>Blok ke 1</p>
+		<script type="text/javascript">
+			//alert("Block 1 dijalankan");
+			tampilPesan('Ini adalah Blok ke 1');
+			
+		</script>
+	<p>Blok ke 2</p>
+		<script type="text/javascript">
+			// document.bgColor = "red";
+			// alert("Block 2 dijalankan");
+			ubahBg();
+			tampilPesan("Ini adalah Blok ke 2");
+		</script>
+</body>
+</html>

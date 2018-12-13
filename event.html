@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+	<script type="text/javascript">
+		function tampilPesan(pesan){
+			alert(pesan);	
+		}
+
+		function ubahStatus(){
+			alert('Status telah diubah');
+		}
+	
+		function cari(){
+			alert("Data sedang dicari");
+		}
+
+		function validasi(){
+
+		var nama = document.formpendaftaran.nama.value;
+			if (nama == '') {
+				alert("Nama belum dimasukkan");
+			}
+
+			else {
+				
+				alert(nama);
+			}
+
+		}
+	</script>
+<body>
+	<button type="button" onclick="tampilPesan('Saya telah di klik')">Klik saya</button>
+
+	<select name="sample" onchange="ubahStatus()">
+		<option value="">Belum dikirim</option>
+		<option value="">Sudah dikirim</option>
+	</select>
+	
+	<input type="text" placeholder="Masukkan kata" onkeyup="cari()">
+
+	<form name="formpendaftaran">
+		<input type="text" name="nama" placeholder="Masukkan nama anda">
+		<button type="submit" onclick="validasi()">Cek</button>
+	</form>
+</body>
+</html>
