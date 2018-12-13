@@ -31,18 +31,23 @@
        break;
    }
 
-if(lampu == "merah"){
-        console.log("lampu warna merah");
-}
-else if(lampu == "hijau"){
-        console.log("lampu warna hijau");
-}
-else if(lampu == "kuning"){
-        console.log("lampu warna kuning");
-}
-else{
-        console.log("lampu tidak nyala");
-}
+        if(lampu == "merah"){
+                console.log("lampu warna merah");
+        }
+        else if(lampu == "hijau"){
+                console.log("lampu warna hijau");
+        }
+        else if(lampu == "kuning"){
+                console.log("lampu warna kuning");
+        }
+        else{
+                console.log("lampu tidak nyala");
+        }
+
+        for (var i=0; i<5; i++) {
+               console.log("Cetak bilangan " + i);
+                
+        }
     
 </script>
 
